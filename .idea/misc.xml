@@ -3,15 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/migui/AndroidStudioProjects/ExamenApp/app/src/main/res/drawable/ic_check.xml" value="0.225" />
         <entry key="..\:/Users/migui/AndroidStudioProjects/ExamenApp/app/src/main/res/layout/activity_2.xml" value="0.371875" />
         <entry key="..\:/Users/migui/AndroidStudioProjects/ExamenApp/app/src/main/res/layout/activity_alertdialog.xml" value="0.371875" />
         <entry key="..\:/Users/migui/AndroidStudioProjects/ExamenApp/app/src/main/res/layout/activity_cambiaractivity.xml" value="0.371875" />
         <entry key="..\:/Users/migui/AndroidStudioProjects/ExamenApp/app/src/main/res/layout/activity_main.xml" value="0.371875" />
         <entry key="..\:/Users/migui/AndroidStudioProjects/ExamenApp/app/src/main/res/layout/cubo.xml" value="0.371875" />
+        <entry key="..\:/Users/migui/AndroidStudioProjects/ExamenApp/app/src/main/res/layout/custom_toast.xml" value="0.20885416666666667" />
         <entry key="..\:/Users/migui/AndroidStudioProjects/ExamenApp/app/src/main/res/layout/fragment_1.xml" value="0.371875" />
         <entry key="..\:/Users/migui/AndroidStudioProjects/ExamenApp/app/src/main/res/layout/fragment_2.xml" value="0.38385416666666666" />
         <entry key="..\:/Users/migui/AndroidStudioProjects/ExamenApp/app/src/main/res/layout/fragment_3.xml" value="0.371875" />
         <entry key="..\:/Users/migui/AndroidStudioProjects/ExamenApp/app/src/main/res/layout/fragment_fragment2.xml" value="0.371875" />
+        <entry key="..\:/Users/migui/AndroidStudioProjects/ExamenApp/app/src/main/res/layout/fragment_internet.xml" value="0.20885416666666667" />
       </map>
     </option>
   </component>
