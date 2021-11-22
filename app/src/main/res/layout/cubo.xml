@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/fragment_calculadora">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cubo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cubo"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+        <EditText
+            android:id="@+id/ladoCubo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/lado"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cubo"
+            tools:ignore="SpeakableTextPresentCheck,DuplicateClickableBoundsCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bAreaCubo"
+                android:layout_width="205dp"
+                android:layout_height="75dp"
+                android:text="@string/area"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvResultadoCubo" />
+
+            <Button
+                android:id="@+id/bVolumenCubo"
+                android:layout_width="205dp"
+                android:layout_height="75dp"
+                android:text="@string/volumen"
+                app:layout_constraintStart_toStartOf="@+id/bAreaCubo"
+                app:layout_constraintTop_toBottomOf="@+id/bAreaCubo" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="22dp" />
+
+        <TextView
+            android:id="@+id/tvResultadoCubo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/resultado"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/bAreaCubo"
+            app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+    </LinearLayout>
+</merge>
