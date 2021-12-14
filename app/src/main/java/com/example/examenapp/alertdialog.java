@@ -21,44 +21,41 @@ public class alertdialog extends AppCompatActivity {
 
         button = findViewById(R.id.button);
         builder = new AlertDialog.Builder(this);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        button.setOnClickListener(v -> {
 
-                //Uncomment the below code to Set the message and title from the strings.xml file
-                //dialog_message y dialog_title estan en string.xml
-                builder.setMessage(R.string.dialog_message).setTitle(R.string.dialog_title);
+            //Uncomment the below code to Set the message and title from the strings.xml file
+            //dialog_message y dialog_title estan en string.xml
+            builder.setMessage(R.string.dialog_message).setTitle(R.string.dialog_title);
 
-                //Setting message manually and performing action on button click
-                builder.setMessage("Do you want to close this application ?")
-                        .setCancelable(false)
-                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                finish();
-                                Toast.makeText(getApplicationContext(), "you choose yes action for alertbox",
-                                        Toast.LENGTH_SHORT).show();
-                            }
-                        })
-                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                //  Action for 'NO' Button
-                                dialog.cancel();
-                                Toast.makeText(getApplicationContext(), "you choose no action for alertbox",
-                                        Toast.LENGTH_SHORT).show();
-                            }
-                        })
-                        .setNeutralButton("idk", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
+            //Setting message manually and performing action on button click
+            builder.setMessage("Do you want to close this application ?")
+                    .setCancelable(false)
+                    .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            finish();
+                            Toast.makeText(getApplicationContext(), "you choose yes action for alertbox",
+                                    Toast.LENGTH_SHORT).show();
+                        }
+                    })
+                    .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            //  Action for 'NO' Button
+                            dialog.cancel();
+                            Toast.makeText(getApplicationContext(), "you choose no action for alertbox",
+                                    Toast.LENGTH_SHORT).show();
+                        }
+                    })
+                    .setNeutralButton("idk", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
 
-                            }
-                        });
-                //Creating dialog box
-                AlertDialog alert = builder.create();
-                //Setting the title manually
-                alert.setTitle("AlertDialogExample");
-                alert.show();
-            }
+                        }
+                    });
+            //Creating dialog box
+            AlertDialog alert = builder.create();
+            //Setting the title manually
+            alert.setTitle("AlertDialogExample");
+            alert.show();
         });
     }
 
